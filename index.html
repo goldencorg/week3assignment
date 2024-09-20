@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--I created a navbar that will resize once the screen shrinks enough. The Cal logo will serve as a home button.
+Each list item serves as a link to another page, with proper spacing and links from the class nav-item and nav-link.-->
+<body style="background-color: #bc9b6a;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #fdb515;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="cal/cal.png" alt="Cal logo" style="height: 30px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--I created a title area in a container. I then created a big container where three cards (with an image and stats) 
+    were put in a row and spaced evenly. They will resize and stack when the screen shrinks. I repeated the same process for the container below.-->
+    <div class="container text-center title">
+      <h1 class="display-1">Team Captains</h1>
+    </div>
+    <div class="container">
+      <h4 class="display-4 text-center" style="padding-bottom: 10px;">Offense</h1>
+      <div class="row" style="padding-bottom: 30px;">
+        <div class="col-lg-4" style="padding-bottom: 30px;">
+          <div class="card">
+            <img src="cal/mesko.PNG" class="card-img-top" alt="Max Mesko">
+            <div class="card-body">
+              <p class="card-text">
+                Max Mesko | #16 | QB | Sophmore | 6'1" · 195 lbs | 26-27:
+                <br>
+                8,306 YARDS | 85 TD · 33 INT | 324 COMP · 576 ATT | 56% COMP%
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" style="padding-bottom: 20px;">
+          <div class="card">
+            <img src="cal/cleveland.PNG" class="card-img-top" alt="Bruce Cleveland">
+            <div class="card-body">
+              <p class="card-text">
+              Bruce Cleveland | #14 | HB | Sophmore | 6'3" · 238 lbs | 26-27:
+              <br>
+              720 YARDS | 168 CAR | 4.3 AVG | 14 TD | 355 YAC | 33 BTK | 2 FUMB
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" style="padding-bottom: 30px;">
+          <div class="card">
+            <img src="cal/hunter.PNG" class="card-img-top" alt="Nyziah Hunter">
+            <div class="card-body">
+              <p class="card-text">
+              Nyziah Hunter | #13 | WR | Senior (RS) | 6'2" · 210 lbs | 26-27:
+              <br>
+              5,339 YARDS | 117 REC | 45.6 AVG | 57 TD | 1,282 RAC
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h4 class="display-4 text-center" style="padding-bottom: 10px;">Defense</h1>
+        <div class="row" style="padding-bottom: 30px;">
+          <div class="col-lg-4" style="padding-bottom: 30px;">
+            <div class="card">
+              <img src="cal/tounkara.PNG" class="card-img-top" alt="Serigne Tounkara">
+              <div class="card-body">
+                <p class="card-text">
+                Serigne Tounkara | #85 | LOLB | Senior (RS) | 6'2" · 235 lbs | 26-27:
+                <br>
+                69 SOLO | 11 ASSISTS | 80 TAK | 6 TFL | 24.5 SACK | 3 FF | 2 DEFL
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" style="padding-bottom: 30px;">
+            <div class="card">
+              <img src="cal/rea.PNG" class="card-img-top" alt="Soma Rea">
+              <div class="card-body">
+                <p class="card-text">
+                Soma Rea | #2 | MLB | Sophmore (RS) | 5'11" · 234 lbs | 26-27:
+                <br>
+                79 SOLO | 15 ASSISTS | 94 TAK | 4 TFL | 2.5 SACK | 1 FF | 10 DEFL
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" style="padding-bottom: 30px;">
+            <div class="card">
+              <img src="cal/page.PNG" class="card-img-top" alt="Branden Page">
+              <div class="card-body">
+                <p class="card-text">
+                Branden Page | #12 | CB | Senior (RS) | 5'9" · 187 lbs | 26-27:
+                <br>
+                40 SOLO | 10 ASSISTS | 50 TAK | 1 TFL | 0 INT | 1 FF | 8 DEFL
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

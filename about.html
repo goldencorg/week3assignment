@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #bc9b6a;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #fdb515;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="cal/cal.png" alt="Cal logo" style="height: 30px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--I made one big container with a row inside. I made three main divs (text, empty, image/table) that take up different amounts of columns. 
+    They take up 6,1, and 5 columns respectively. I used classes that will stack the divs once they reach the minumum size requirement of less than
+    1200 pixels of width. I created a figure with a caption and then a table below that will all stack under the main text when the screen size decreases.-->
+    <div class="container">
+      <div class="row">
+        <div class="text-center col-xl-6" style="padding-top: 100px; font-size: large;">
+          <h1 class="display-1">The Rebuild</h1>
+          <p>
+            Hello! I'm Nathan. This website is based on my career as Offensive Coordinator of the Cal Golden Bears in the Dynasty mode of the game College Football 25.
+            My goal was to bring this 3.5 star program back to glory. I am currently in season 4, year 2027 of this career save, coming off a dominant run from the previous season. 
+            On this site, I have displayed my most important players on offense, while also including valuable pieces from the defensive side.
+          </p>
+          <br>
+          <p>
+            I bought CFB 25 out of curiosity, interested in how it would compare with Madden games. It led me to gain a much better understanding of college football and even become a big fan of it.
+            Now I follow it every week and can't get enough of it, while slowly learning more about the strategical and analytical aspects of football. 
+          </p>
+          <br>
+          <p>
+            While the Golden Bears will have my support in real life, due to being their OC in CFB 25, I will always support the USC Trojans above everyone else. Fight on!
+          </p>
+        </div>
+        <div class="col-xl-1"></div>
+        <div class="text-center col-xl-5" style="padding-top: 50px; padding-bottom: 15px;">
+          <figure class="figure">
+            <img src="cal/natty.png" class="figure-img img-fluid rounded" alt="Winning the national championship">
+            <figcaption class="figure-caption">The 26-27 Golden Bears winning the national championship against the Oregon Ducks.</figcaption>
+          </figure>
+          <br>
+          <table class="table table-hover">
+            <tr>
+                <th>Season</th>
+                <th>Record</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>24-25</td>
+                <td>8-5</td>
+                <td>Pop-Tarts Bowl (W)</td>
+            </tr>
+            <tr>
+                <td>25-26</td>
+                <td>10-3</td>
+                <td>Gasparilla Bowl (W)</td>
+            </tr>
+            <tr>
+                <td>26-27</td>
+                <td>12-1</td>
+                <td>National Championship (W)</td>
+            </tr>
+            <tr>
+              <td>27-28</td>
+              <td>TBD</td>
+              <td>TBD</td>
+            </tr>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
